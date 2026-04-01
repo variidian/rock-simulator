@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bq287illy3qln"]
+
+[ext_resource type="FontFile" uid="uid://cox4arwtl10ht" path="res://assets/Cherry_Bomb_One/CherryBombOne-Regular.ttf" id="1_iemid"]
+
+[resource]
+RichTextLabel/colors/default_color = Color(1, 1, 1, 1)
+RichTextLabel/font_sizes/normal_font_size = 90
+RichTextLabel/fonts/normal_font = ExtResource("1_iemid")

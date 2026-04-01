@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://dqns5cvohvk71"]
+[gd_scene load_steps=48 format=3 uid="uid://dqns5cvohvk71"]
 
 [ext_resource type="Script" uid="uid://dumr4dsxow6aw" path="res://stuff/control.gd" id="1_32id4"]
 [ext_resource type="Texture2D" uid="uid://crtha2l56sv2f" path="res://assets/Untitled_Artwork (2).png" id="1_hspmc"]
@@ -22,11 +22,12 @@
 [ext_resource type="Texture2D" uid="uid://dsanvs7xusd07" path="res://assets/rock sim/rock sim/Untitled_Artwork-17.png" id="19_rjts7"]
 [ext_resource type="Texture2D" uid="uid://clf1nbkxo8uq1" path="res://assets/rock sim/rock sim/Untitled_Artwork-18.png" id="20_1fmw1"]
 [ext_resource type="Texture2D" uid="uid://c41xcf1d27uu4" path="res://assets/rock sim/rock sim/Untitled_Artwork-19.png" id="21_q5aec"]
+[ext_resource type="Texture2D" uid="uid://b6m5pc6ph60s5" path="res://assets/e.png" id="22_gnyuf"]
 [ext_resource type="Texture2D" uid="uid://cqr0qb0mpgufd" path="res://assets/2 (1).png" id="22_p7g20"]
 [ext_resource type="Texture2D" uid="uid://crsdors1hjb2b" path="res://assets/2 (2).png" id="23_8o6mh"]
-[ext_resource type="Texture2D" uid="uid://bgsbr6dte75ce" path="res://assets/Untitled_Artwork (4).png" id="23_w7v6w"]
+[ext_resource type="Theme" uid="uid://bq287illy3qln" path="res://stuff/mainmenu.tres" id="23_77c2f"]
 [ext_resource type="Texture2D" uid="uid://diwi5fjqygh67" path="res://assets/2 (3).png" id="24_32id4"]
-[ext_resource type="FontFile" uid="uid://cox4arwtl10ht" path="res://assets/Cherry_Bomb_One/CherryBombOne-Regular.ttf" id="27_w7v6w"]
+[ext_resource type="Texture2D" uid="uid://68o2jybkxi8j" path="res://assets/www.png" id="25_gnyuf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0g64b"]
 animations = [{
@@ -93,6 +94,24 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0ghjt"]
+texture = ExtResource("22_gnyuf")
+
+[sub_resource type="Animation" id="Animation_egfft"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("background stuff/menu_bg:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(960, 540)]
+}
+
 [sub_resource type="Animation" id="Animation_lmou2"]
 resource_name = "moving_menu_bg"
 length = 6.0
@@ -110,25 +129,71 @@ tracks/0/keys = {
 "values": [Vector2(960, 540), Vector2(1022.5, 540), Vector2(980, 540), Vector2(980, 540), Vector2(1045.7142, 540), Vector2(1045.7142, 540), Vector2(1045, 540), Vector2(1118.3334, 540), Vector2(1118.3334, 540), Vector2(1096, 540)]
 }
 
-[sub_resource type="Animation" id="Animation_egfft"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wfiao"]
+_data = {
+&"RESET": SubResource("Animation_egfft"),
+&"moving_menu_bg": SubResource("Animation_lmou2")
+}
+
+[sub_resource type="Animation" id="Animation_gnyuf"]
+resource_name = "credits_roll"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -1086), Vector2(0, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("credits_Text:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.13333334, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_77c2f"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("background stuff/menu_bg:position")
+tracks/0/path = NodePath("Panel:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(960, 540)]
+"values": [Vector2(0, -1086)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("credits_Text:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_wfiao"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g54jw"]
 _data = {
-&"RESET": SubResource("Animation_egfft"),
-&"moving_menu_bg": SubResource("Animation_lmou2")
+&"RESET": SubResource("Animation_77c2f"),
+&"credits_roll": SubResource("Animation_gnyuf")
 }
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w7v6w"]
@@ -169,11 +234,6 @@ load_path = "res://.godot/imported/2 (3).png-2525e7dbd22aad9d852bac0b753b1f31.ct
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hyotd"]
 texture = SubResource("CompressedTexture2D_32id4")
 
-[sub_resource type="Theme" id="Theme_gnyuf"]
-RichTextLabel/colors/default_color = Color(0.019607844, 0.9882353, 0.8509804, 1)
-RichTextLabel/font_sizes/normal_font_size = 90
-RichTextLabel/fonts/normal_font = ExtResource("27_w7v6w")
-
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -189,20 +249,48 @@ script = ExtResource("1_32id4")
 position = Vector2(960, 540)
 texture = ExtResource("1_hspmc")
 
-[node name="menu_bg" type="Sprite2D" parent="background stuff"]
-position = Vector2(960, 540)
-texture = ExtResource("2_wr1n5")
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="background stuff"]
 position = Vector2(510, 378)
 sprite_frames = SubResource("SpriteFrames_0g64b")
 autoplay = "default"
-frame_progress = 0.96558285
+frame_progress = 0.4053793
 
-[node name="Sprite2D" type="Sprite2D" parent="background stuff"]
-position = Vector2(1032, 671)
-scale = Vector2(0.8567708, 0.76296294)
-texture = ExtResource("23_w7v6w")
+[node name="Panel" type="Panel" parent="background stuff"]
+offset_top = -1086.0
+offset_right = 1357.0
+offset_bottom = 9.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_0ghjt")
+
+[node name="credits_Text" type="RichTextLabel" parent="background stuff"]
+offset_left = -101.0
+offset_top = 181.0
+offset_right = 1335.0
+offset_bottom = 865.0
+theme = ExtResource("23_77c2f")
+theme_override_colors/default_color = Color(0.8509804, 0.7294118, 0.24313726, 1)
+text = "CREDITS
+Audio - freesound.org
+Art - @variidian
+Code - @variidian
+Game engine - Godot
+
+
+
+
+
+"
+horizontal_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="menu_bg" type="Sprite2D" parent="background stuff"]
+position = Vector2(960, 540)
+texture = ExtResource("2_wr1n5")
+
+[node name="thanks_sign" type="Sprite2D" parent="background stuff"]
+position = Vector2(942.5, 705.5)
+scale = Vector2(0.7859375, 0.70648146)
+texture = ExtResource("25_gnyuf")
 
 [node name="menu_bg2" type="AnimationPlayer" parent="background stuff"]
 root_node = NodePath("../..")
@@ -210,6 +298,11 @@ libraries = {
 &"": SubResource("AnimationLibrary_wfiao")
 }
 autoplay = "moving_menu_bg"
+
+[node name="credits_anim" type="AnimationPlayer" parent="background stuff"]
+libraries = {
+&"": SubResource("AnimationLibrary_g54jw")
+}
 
 [node name="menu stuff" type="Node2D" parent="."]
 
@@ -254,7 +347,7 @@ offset_left = 1516.0
 offset_top = 286.0
 offset_right = 1911.0
 offset_bottom = 422.0
-theme = SubResource("Theme_gnyuf")
+theme = ExtResource("23_77c2f")
 text = "start"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -264,7 +357,7 @@ offset_left = 1548.0
 offset_top = 509.0
 offset_right = 1943.0
 offset_bottom = 645.0
-theme = SubResource("Theme_gnyuf")
+theme = ExtResource("23_77c2f")
 text = "credits"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -274,7 +367,10 @@ offset_left = 1587.0
 offset_top = 716.0
 offset_right = 1982.0
 offset_bottom = 852.0
-theme = SubResource("Theme_gnyuf")
+theme = ExtResource("23_77c2f")
 text = "quit"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="menu stuff/CREDITS" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="menu stuff/QUIT" to="." method="_on_quit_pressed"]
