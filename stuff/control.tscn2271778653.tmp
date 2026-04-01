@@ -372,9 +372,5 @@ text = "quit"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="focus_entered" from="menu stuff/START" to="." method="startbutton_focused"]
-[connection signal="pressed" from="menu stuff/START" to="." method="_on_start_pressed"]
-[connection signal="focus_entered" from="menu stuff/CREDITS" to="." method="_on_credits_focus_entered"]
 [connection signal="pressed" from="menu stuff/CREDITS" to="." method="_on_credits_pressed"]
-[connection signal="focus_entered" from="menu stuff/QUIT" to="." method="quitbutton_focused"]
 [connection signal="pressed" from="menu stuff/QUIT" to="." method="_on_quit_pressed"]

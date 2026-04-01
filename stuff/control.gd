@@ -31,10 +31,11 @@ func _process(delta: float) -> void:
 	if not quit_b.has_focus():
 		quit_b.size.x = 512
 		quit_b.position.x = 1411
-
 func _on_quit_pressed() -> void: #quit game trigger
 	get_tree().quit()
+	Click.play()
 func _on_credits_pressed() -> void: #credits trigger
+	Click.play()
 	if credits_text.is_visible_in_tree():
 		credits_anim.play_backwards("credits_roll")
 		await credits_anim.animation_finished
@@ -44,3 +45,15 @@ func _on_credits_pressed() -> void: #credits trigger
 		credits_text.show() 
 		credits_panel.show()
 		credits_anim.play("credits_roll")
+	
+func _on_start_pressed() -> void:
+	Click.play()
+
+
+#SFX
+func startbutton_focused() -> void:
+	Switch.play()
+func _on_credits_focus_entered() -> void:
+	Switch.play()
+func quitbutton_focused() -> void:
+	Switch.play()

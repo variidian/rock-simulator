@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlkitekgqj1ej"]
+
+[ext_resource type="AudioStream" uid="uid://csumti8hkhikq" path="res://assets/switch.wav" id="1_myokh"]
+
+[node name="switch" type="AudioStreamPlayer"]
+stream = ExtResource("1_myokh")
+volume_db = -12.0

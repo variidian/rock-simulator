@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckb5dmowtokv4"]
+
+[ext_resource type="AudioStream" uid="uid://btr74ltinmsve" path="res://assets/click.mp3" id="1_param"]
+
+[node name="click" type="AudioStreamPlayer"]
+stream = ExtResource("1_param")
+volume_db = -5.0
