@@ -1,0 +1,280 @@
+[gd_scene load_steps=44 format=3 uid="uid://dqns5cvohvk71"]
+
+[ext_resource type="Script" uid="uid://dumr4dsxow6aw" path="res://stuff/control.gd" id="1_32id4"]
+[ext_resource type="Texture2D" uid="uid://crtha2l56sv2f" path="res://assets/Untitled_Artwork (2).png" id="1_hspmc"]
+[ext_resource type="Texture2D" uid="uid://b2q2gkgtivk81" path="res://assets/Untitled_Artwork.png" id="2_wr1n5"]
+[ext_resource type="Texture2D" uid="uid://c53ukkintumkn" path="res://assets/rock sim/rock sim/Untitled_Artwork-1.png" id="3_8txhb"]
+[ext_resource type="Texture2D" uid="uid://bf40omfvxtg4r" path="res://assets/rock sim/rock sim/Untitled_Artwork-2.png" id="4_dtuk8"]
+[ext_resource type="Texture2D" uid="uid://bgcocroaatgb2" path="res://assets/rock sim/rock sim/Untitled_Artwork-3.png" id="5_ba0hy"]
+[ext_resource type="Texture2D" uid="uid://da4tuyvo7c4ve" path="res://assets/rock sim/rock sim/Untitled_Artwork-4.png" id="6_p7g20"]
+[ext_resource type="Texture2D" uid="uid://bwbknsqge8kb" path="res://assets/rock sim/rock sim/Untitled_Artwork-5.png" id="7_8o6mh"]
+[ext_resource type="Texture2D" uid="uid://bjwo4ff5moa4k" path="res://assets/rock sim/rock sim/Untitled_Artwork-6.png" id="8_32id4"]
+[ext_resource type="Texture2D" uid="uid://bih7vp5c7s2uo" path="res://assets/rock sim/rock sim/Untitled_Artwork-7.png" id="9_w7v6w"]
+[ext_resource type="Texture2D" uid="uid://b3oxqte7ty0ev" path="res://assets/rock sim/rock sim/Untitled_Artwork-8.png" id="10_gnyuf"]
+[ext_resource type="Texture2D" uid="uid://bo5v8kv7mlvyn" path="res://assets/rock sim/rock sim/Untitled_Artwork-9.png" id="11_77c2f"]
+[ext_resource type="Texture2D" uid="uid://dn7la4xls0kev" path="res://assets/rock sim/rock sim/Untitled_Artwork-10.png" id="12_g54jw"]
+[ext_resource type="Texture2D" uid="uid://q1247xcrxq2v" path="res://assets/rock sim/rock sim/Untitled_Artwork-11.png" id="13_5akwb"]
+[ext_resource type="Texture2D" uid="uid://c7epn4rbsg6xu" path="res://assets/rock sim/rock sim/Untitled_Artwork-12.png" id="14_hyotd"]
+[ext_resource type="Texture2D" uid="uid://ha56ad647mb6" path="res://assets/rock sim/rock sim/Untitled_Artwork-13.png" id="15_0ghjt"]
+[ext_resource type="Texture2D" uid="uid://shtb36k6ufww" path="res://assets/rock sim/rock sim/Untitled_Artwork-14.png" id="16_xwpsr"]
+[ext_resource type="Texture2D" uid="uid://t773ybe7qoc0" path="res://assets/rock sim/rock sim/Untitled_Artwork-15.png" id="17_vs07i"]
+[ext_resource type="Texture2D" uid="uid://dmbtpg3bir6nf" path="res://assets/rock sim/rock sim/Untitled_Artwork-16.png" id="18_buolp"]
+[ext_resource type="Texture2D" uid="uid://dsanvs7xusd07" path="res://assets/rock sim/rock sim/Untitled_Artwork-17.png" id="19_rjts7"]
+[ext_resource type="Texture2D" uid="uid://clf1nbkxo8uq1" path="res://assets/rock sim/rock sim/Untitled_Artwork-18.png" id="20_1fmw1"]
+[ext_resource type="Texture2D" uid="uid://c41xcf1d27uu4" path="res://assets/rock sim/rock sim/Untitled_Artwork-19.png" id="21_q5aec"]
+[ext_resource type="Texture2D" uid="uid://cqr0qb0mpgufd" path="res://assets/2 (1).png" id="22_p7g20"]
+[ext_resource type="Texture2D" uid="uid://crsdors1hjb2b" path="res://assets/2 (2).png" id="23_8o6mh"]
+[ext_resource type="Texture2D" uid="uid://bgsbr6dte75ce" path="res://assets/Untitled_Artwork (4).png" id="23_w7v6w"]
+[ext_resource type="Texture2D" uid="uid://diwi5fjqygh67" path="res://assets/2 (3).png" id="24_32id4"]
+[ext_resource type="FontFile" uid="uid://cox4arwtl10ht" path="res://assets/Cherry_Bomb_One/CherryBombOne-Regular.ttf" id="27_w7v6w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0g64b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_8txhb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dtuk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ba0hy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_p7g20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8o6mh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_32id4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_w7v6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gnyuf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_77c2f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_g54jw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_5akwb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_hyotd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_0ghjt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_xwpsr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vs07i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_buolp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_rjts7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_1fmw1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_q5aec")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="Animation" id="Animation_lmou2"]
+resource_name = "moving_menu_bg"
+length = 6.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("background stuff/menu_bg:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8333333, 1.6333333, 2.1666667, 2.8666666, 3.2223446, 4.0666666, 4.7, 5.253664, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(960, 540), Vector2(1022.5, 540), Vector2(980, 540), Vector2(980, 540), Vector2(1045.7142, 540), Vector2(1045.7142, 540), Vector2(1045, 540), Vector2(1118.3334, 540), Vector2(1118.3334, 540), Vector2(1096, 540)]
+}
+
+[sub_resource type="Animation" id="Animation_egfft"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("background stuff/menu_bg:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(960, 540)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wfiao"]
+_data = {
+&"RESET": SubResource("Animation_egfft"),
+&"moving_menu_bg": SubResource("Animation_lmou2")
+}
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w7v6w"]
+texture = ExtResource("22_p7g20")
+modulate_color = Color(0.8047426, 0.80474263, 0.8047426, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p7g20"]
+load_path = "res://.godot/imported/2 (1).png-1c43ccf3b5af69a03d5e01c22dbef5d4.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8o6mh"]
+texture = SubResource("CompressedTexture2D_p7g20")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gnyuf"]
+texture = ExtResource("23_8o6mh")
+modulate_color = Color(0.8039216, 0.8039216, 0.8039216, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_77c2f"]
+texture = ExtResource("23_8o6mh")
+modulate_color = Color(0.8039216, 0.8039216, 0.8039216, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g54jw"]
+texture = ExtResource("23_8o6mh")
+modulate_color = Color(0.8039216, 0.8039216, 0.8039216, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8o6mh"]
+load_path = "res://.godot/imported/2 (2).png-845c79c55fe6ef84566ae1bf32e5d548.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_32id4"]
+texture = SubResource("CompressedTexture2D_8o6mh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5akwb"]
+texture = ExtResource("24_32id4")
+modulate_color = Color(0.8039216, 0.8039216, 0.8039216, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_32id4"]
+load_path = "res://.godot/imported/2 (3).png-2525e7dbd22aad9d852bac0b753b1f31.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hyotd"]
+texture = SubResource("CompressedTexture2D_32id4")
+
+[sub_resource type="Theme" id="Theme_gnyuf"]
+RichTextLabel/colors/default_color = Color(0.019607844, 0.9882353, 0.8509804, 1)
+RichTextLabel/font_sizes/normal_font_size = 90
+RichTextLabel/fonts/normal_font = ExtResource("27_w7v6w")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_32id4")
+
+[node name="background stuff" type="Node2D" parent="."]
+
+[node name="rock sky" type="Sprite2D" parent="background stuff"]
+position = Vector2(960, 540)
+texture = ExtResource("1_hspmc")
+
+[node name="menu_bg" type="Sprite2D" parent="background stuff"]
+position = Vector2(960, 540)
+texture = ExtResource("2_wr1n5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="background stuff"]
+position = Vector2(510, 378)
+sprite_frames = SubResource("SpriteFrames_0g64b")
+autoplay = "default"
+frame_progress = 0.96558285
+
+[node name="Sprite2D" type="Sprite2D" parent="background stuff"]
+position = Vector2(1032, 671)
+scale = Vector2(0.8567708, 0.76296294)
+texture = ExtResource("23_w7v6w")
+
+[node name="menu_bg2" type="AnimationPlayer" parent="background stuff"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_wfiao")
+}
+autoplay = "moving_menu_bg"
+
+[node name="menu stuff" type="Node2D" parent="."]
+
+[node name="START" type="Button" parent="menu stuff"]
+offset_left = 1200.0
+offset_top = 226.0
+offset_right = 1922.0
+offset_bottom = 497.0
+focus_neighbor_top = NodePath("../QUIT")
+focus_neighbor_bottom = NodePath("../CREDITS")
+theme_override_styles/normal = SubResource("StyleBoxTexture_w7v6w")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_w7v6w")
+theme_override_styles/hover = SubResource("StyleBoxTexture_w7v6w")
+theme_override_styles/focus = SubResource("StyleBoxTexture_8o6mh")
+
+[node name="CREDITS" type="Button" parent="menu stuff"]
+offset_left = 1268.0
+offset_top = 439.0
+offset_right = 1924.0
+offset_bottom = 717.0
+focus_neighbor_top = NodePath("../START")
+focus_neighbor_bottom = NodePath("../QUIT")
+theme_override_styles/normal = SubResource("StyleBoxTexture_gnyuf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_77c2f")
+theme_override_styles/hover = SubResource("StyleBoxTexture_g54jw")
+theme_override_styles/focus = SubResource("StyleBoxTexture_32id4")
+
+[node name="QUIT" type="Button" parent="menu stuff"]
+offset_left = 1015.0
+offset_top = 659.0
+offset_right = 1923.0
+offset_bottom = 911.0
+focus_neighbor_top = NodePath("../CREDITS")
+focus_neighbor_bottom = NodePath("../START")
+theme_override_styles/normal = SubResource("StyleBoxTexture_5akwb")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_5akwb")
+theme_override_styles/hover = SubResource("StyleBoxTexture_5akwb")
+theme_override_styles/focus = SubResource("StyleBoxTexture_hyotd")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="menu stuff"]
+offset_left = 1516.0
+offset_top = 286.0
+offset_right = 1911.0
+offset_bottom = 422.0
+theme = SubResource("Theme_gnyuf")
+text = "start"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="menu stuff"]
+offset_left = 1548.0
+offset_top = 509.0
+offset_right = 1943.0
+offset_bottom = 645.0
+theme = SubResource("Theme_gnyuf")
+text = "credits"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="menu stuff"]
+offset_left = 1587.0
+offset_top = 716.0
+offset_right = 1982.0
+offset_bottom = 852.0
+theme = SubResource("Theme_gnyuf")
+text = "quit"
+horizontal_alignment = 1
+vertical_alignment = 1
