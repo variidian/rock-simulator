@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://g4evvpgovsk5"]
+
+[ext_resource type="Texture2D" uid="uid://bs6ar2qs33n2a" path="res://assets/P/P/Untitled_Artwork-1.png" id="1_envp8"]
+[ext_resource type="Script" uid="uid://dkt7ji52oip5c" path="res://stuff/loading.gd" id="3_q4to4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i4waf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_envp8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="anim" type="AnimatedSprite2D"]
+position = Vector2(960, 540)
+sprite_frames = SubResource("SpriteFrames_i4waf")
+script = ExtResource("3_q4to4")

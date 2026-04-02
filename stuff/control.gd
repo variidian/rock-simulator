@@ -48,6 +48,8 @@ func _on_credits_pressed() -> void: #credits trigger
 	
 func _on_start_pressed() -> void:
 	Click.play()
+	Loading.playy()
+	transition.change_scene("res://stuff/first_scene.tscn", "control")
 
 
 #SFX

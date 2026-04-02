@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bf2kdo555exoe"]
+
+[ext_resource type="AudioStream" uid="uid://b4dkykstvu5u5" path="res://assets/442911__scicodedev__calm_happy_rpgtownbackground.mp3" id="1_l7bcd"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_l7bcd")
+autoplay = true

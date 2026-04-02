@@ -20,6 +20,9 @@ config/icon="res://icon.svg"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 Click="*res://stuff/click.tscn"
 Switch="*res://stuff/switch.tscn"
+Bgm="*res://bgm.tscn"
+transition="*res://transition_handler.gd"
+Loading="*res://stuff/loading.tscn"
 
 [display]
 

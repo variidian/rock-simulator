@@ -135,6 +135,33 @@ _data = {
 &"moving_menu_bg": SubResource("Animation_lmou2")
 }
 
+[sub_resource type="Animation" id="Animation_77c2f"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -1086)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("credits_Text:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
 [sub_resource type="Animation" id="Animation_gnyuf"]
 resource_name = "credits_roll"
 length = 1.5
@@ -161,33 +188,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [0.0, 1.0, 1.0]
-}
-
-[sub_resource type="Animation" id="Animation_77c2f"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Panel:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, -1086)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("credits_Text:visible_ratio")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_g54jw"]
@@ -234,7 +234,7 @@ load_path = "res://.godot/imported/2 (3).png-2525e7dbd22aad9d852bac0b753b1f31.ct
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hyotd"]
 texture = SubResource("CompressedTexture2D_32id4")
 
-[node name="Control" type="Control"]
+[node name="control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
