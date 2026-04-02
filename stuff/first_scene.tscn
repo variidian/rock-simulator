@@ -1,3 +1,141 @@
-[gd_scene format=3 uid="uid://brg4qxj08ynpb"]
+[gd_scene load_steps=6 format=3 uid="uid://brg4qxj08ynpb"]
+
+[ext_resource type="Texture2D" uid="uid://ddcp7algi84in" path="res://assets/rock.png" id="1_n6555"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n6555"]
+bg_color = Color(0.2229734, 0.59811693, 0.7334672, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5fsf4"]
+bg_color = Color(0.31330553, 0.6561545, 0.86276454, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y4jvx"]
+bg_color = Color(0.30886033, 0.633755, 0.33228648, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ejxvm"]
+bg_color = Color(0.33976844, 0.68940425, 0.40261692, 1)
 
 [node name="first_scene" type="Node2D"]
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Panel2" type="Panel" parent="Node"]
+offset_right = 1940.0
+offset_bottom = 952.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_n6555")
+
+[node name="Panel3" type="Panel" parent="Node"]
+offset_left = -137.0
+offset_top = -1.0
+offset_right = 754.0
+offset_bottom = 148.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5fsf4")
+
+[node name="Panel7" type="Panel" parent="Node"]
+offset_left = 402.0
+offset_top = 551.0
+offset_right = 1293.0
+offset_bottom = 700.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5fsf4")
+
+[node name="Panel" type="Panel" parent="Node"]
+offset_left = 1.0
+offset_top = 825.0
+offset_right = 1937.0
+offset_bottom = 1078.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_y4jvx")
+
+[node name="Panel6" type="Panel" parent="Node"]
+offset_left = 230.0
+offset_top = 423.0
+offset_right = 1121.0
+offset_bottom = 572.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5fsf4")
+
+[node name="Panel5" type="Panel" parent="Node"]
+offset_left = 1409.0
+offset_top = 126.0
+offset_right = 2300.0
+offset_bottom = 275.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5fsf4")
+
+[node name="Panel4" type="Panel" parent="Node"]
+offset_left = 1321.0
+offset_top = 227.0
+offset_right = 2212.0
+offset_bottom = 376.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5fsf4")
+
+[node name="Panel8" type="Panel" parent="Node"]
+offset_left = 1757.0
+offset_top = 600.0
+offset_right = 2648.0
+offset_bottom = 749.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5fsf4")
+
+[node name="Panel9" type="Panel" parent="Node"]
+offset_left = 1873.0
+offset_top = 546.0
+offset_right = 2764.0
+offset_bottom = 695.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5fsf4")
+
+[node name="Panel10" type="Panel" parent="Node"]
+offset_left = -242.0
+offset_top = 29.0
+offset_right = 649.0
+offset_bottom = 178.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5fsf4")
+
+[node name="Panel11" type="Panel" parent="Node"]
+offset_left = -102.0
+offset_top = -44.0
+offset_right = 789.0
+offset_bottom = 105.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5fsf4")
+
+[node name="Panel12" type="Panel" parent="Node"]
+offset_left = 1080.0
+offset_top = 451.0
+offset_right = 1422.0
+offset_bottom = 600.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5fsf4")
+
+[node name="Panel13" type="Panel" parent="Node"]
+offset_left = 1078.0
+offset_top = 983.0
+offset_right = 1772.0
+offset_bottom = 1099.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ejxvm")
+
+[node name="Panel14" type="Panel" parent="Node"]
+offset_left = 963.0
+offset_top = 947.0
+offset_right = 1657.0
+offset_bottom = 1063.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ejxvm")
+
+[node name="Panel15" type="Panel" parent="Node"]
+offset_left = -149.0
+offset_top = 975.0
+offset_right = 545.0
+offset_bottom = 1091.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ejxvm")
+
+[node name="Panel16" type="Panel" parent="Node"]
+offset_left = 1874.0
+offset_top = 898.0
+offset_right = 2568.0
+offset_bottom = 1014.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ejxvm")
+
+[node name="Panel17" type="Panel" parent="Node"]
+offset_left = 88.0
+offset_top = 947.0
+offset_right = 590.0
+offset_bottom = 1005.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ejxvm")
+
+[node name="Sprite2D" type="Sprite2D" parent="Node"]
+position = Vector2(966, 738)
+scale = Vector2(1.5754191, 1.6540087)
+texture = ExtResource("1_n6555")
