@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://brg4qxj08ynpb"]
+[gd_scene load_steps=7 format=3 uid="uid://brg4qxj08ynpb"]
 
+[ext_resource type="Script" uid="uid://dyb37f124y2po" path="res://stuff/first_scene.gd" id="1_5fsf4"]
 [ext_resource type="Texture2D" uid="uid://ddcp7algi84in" path="res://assets/rock.png" id="1_n6555"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n6555"]
@@ -15,6 +16,7 @@ bg_color = Color(0.30886033, 0.633755, 0.33228648, 1)
 bg_color = Color(0.33976844, 0.68940425, 0.40261692, 1)
 
 [node name="first_scene" type="Node2D"]
+script = ExtResource("1_5fsf4")
 
 [node name="Node" type="Node" parent="."]
 

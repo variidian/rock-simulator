@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bmkupraq236gi"
+path="res://.godot/imported/5.dialogue-041b2767a8cb2d9d295b1fe42e971f90.tres"
+
+[deps]
+
+source_file="res://5.dialogue"
+dest_files=["res://.godot/imported/5.dialogue-041b2767a8cb2d9d295b1fe42e971f90.tres"]
+
+[params]
+
+defaults=true
