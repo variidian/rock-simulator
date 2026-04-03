@@ -15,8 +15,10 @@ var start_time: int
 var elapsed_time_seconds: float
 var last_sec_triggered: int = -1
 var rand
+@onready var shiny = $shiny
 func _ready() -> void:
 	start_time = Time.get_ticks_msec()
+	shiny.hide()
 
 func _process(delta: float) -> void:
 	var current_time = Time.get_ticks_msec() 
@@ -27,3 +29,12 @@ func _process(delta: float) -> void:
 		randomize()
 		rand = randi_range(0, 5)
 		DialogueManager.show_dialogue_balloon(dialogues[rand],"start")
+
+
+func _on_area_2d_mouse_entered() -> void:
+	shiny.show()
+	print("shiny")
+
+
+func _on_area_2d_mouse_exited() -> void:
+	shiny.hide()
