@@ -1,3 +1,7 @@
 ~ start
-Rock: Come on! I seriously cannot be that interesting to you.
+Rock: Will you leave? I seriously cannot be that interesting to you.
+- You are!
+	Rock: Hell nah.
+- You aren't.
+	Rock: Then leave already!
 => END

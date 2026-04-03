@@ -24,6 +24,10 @@ Bgm="*res://bgm.tscn"
 transition="*res://transition_handler.gd"
 Loading="*res://stuff/loading.tscn"
 
+[dialogue_manager]
+
+runtime/balloon_path="res:///balloon.tscn"
+
 [display]
 
 window/size/viewport_width=1920
@@ -35,4 +39,4 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://add
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://stuff/1.dialogue", "res://2.dialogue", "res://3.dialogue", "res://4.dialogue", "res://5.dialogue", "res://6.dialogue", "res://7.dialogue", "res://8.dialogue", "res://9.dialogue", "res://10.dialogue", "res://11.dialogue")
+locale/translations_pot_files=PackedStringArray("res://stuff/1.dialogue", "res://2.dialogue", "res://3.dialogue", "res://4.dialogue", "res://5.dialogue", "res://6.dialogue", "res://7.dialogue", "res://8.dialogue", "res://9.dialogue", "res://10.dialogue", "res://11.dialogue", "res://12.dialogue")

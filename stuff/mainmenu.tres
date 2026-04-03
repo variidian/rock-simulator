@@ -1,8 +1,43 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bq287illy3qln"]
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://bq287illy3qln"]
 
 [ext_resource type="FontFile" uid="uid://cox4arwtl10ht" path="res://assets/Cherry_Bomb_One/CherryBombOne-Regular.ttf" id="1_iemid"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_77vni"]
+content_margin_bottom = 19.0
+bg_color = Color(0.9657807, 0.8720738, 0.5273538, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.3032275, 0.45478654, 0.69912016, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iemid"]
+content_margin_bottom = 19.0
+bg_color = Color(0.8509804, 0.7294118, 0.24313726, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.15294118, 0.25490198, 0.41960785, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
 [resource]
+default_font = ExtResource("1_iemid")
+Button/colors/font_color = Color(0.15294118, 0.25490198, 0.41960785, 1)
+Button/colors/font_hover_color = Color(0.3032275, 0.45478654, 0.69912016, 1)
+Button/font_sizes/font_size = 40
+Button/fonts/font = ExtResource("1_iemid")
+Button/styles/focus = SubResource("StyleBoxFlat_77vni")
+Button/styles/hover = SubResource("StyleBoxFlat_77vni")
+Button/styles/normal = SubResource("StyleBoxFlat_iemid")
+Button/styles/pressed = SubResource("StyleBoxFlat_77vni")
 RichTextLabel/colors/default_color = Color(1, 1, 1, 1)
 RichTextLabel/font_sizes/normal_font_size = 90
 RichTextLabel/fonts/normal_font = ExtResource("1_iemid")

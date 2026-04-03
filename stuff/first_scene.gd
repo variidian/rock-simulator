@@ -16,7 +16,6 @@ var elapsed_time_seconds: float
 var last_sec_triggered: int = -1
 var rand
 func _ready() -> void:
-	DialogueManager.show_dialogue_balloon(load("res://stuff/1.dialogue"), "start")
 	start_time = Time.get_ticks_msec()
 
 func _process(delta: float) -> void:

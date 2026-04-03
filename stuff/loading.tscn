@@ -172,10 +172,12 @@ animations = [{
 }],
 "loop": false,
 "name": &"default",
-"speed": 20.0
+"speed": 15.0
 }]
 
 [node name="anim" type="AnimatedSprite2D"]
+top_level = true
+z_index = 999
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_i4waf")
 frame = 41

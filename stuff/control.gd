@@ -52,6 +52,7 @@ func _on_start_pressed() -> void:
 	transition.change_scene("res://stuff/first_scene.tscn", "control")
 
 
+
 #SFX
 func startbutton_focused() -> void:
 	Switch.play()
